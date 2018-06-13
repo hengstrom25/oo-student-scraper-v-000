@@ -31,6 +31,8 @@ class Scraper
         students_profile[:github] = link
       else
         students_profile[:blog] = link
+      end
+      
   end
 
 end
