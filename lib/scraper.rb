@@ -24,6 +24,7 @@ class Scraper
     social_media.each do |link|
       case
       when link.include?("twitter")
+        
   end
 
 end
