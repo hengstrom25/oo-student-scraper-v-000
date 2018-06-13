@@ -23,7 +23,7 @@ class Scraper
     social_media = profile.css("div.social-icon-container a").collect {|a| a.attribute("href").value)
     social_media.each do |link|
       case
-      when 
+      when link.include?("twitter")
   end
 
 end
