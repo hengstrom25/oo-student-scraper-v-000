@@ -29,7 +29,8 @@ class Scraper
         students_profile[:linkedin] = link
       when link.include?("github")
         students_profile[:github] = link
-      when link.include?("blog")
+      else
+        students_profile[:blog] = link
   end
 
 end
