@@ -24,7 +24,12 @@ class Scraper
     social_media.each do |link|
       case
       when link.include?("twitter")
-        students_profile[:twitter]
+        students_profile[:twitter] = link
+      when link.include?("linkedin")
+        students_profile[:linkedin] = link
+      when link.include?("github")
+        students_profile[:github] = link
+      when link.include?("blog")
   end
 
 end
