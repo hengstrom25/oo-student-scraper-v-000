@@ -32,7 +32,7 @@ class Scraper
       else
         students_profile[:blog] = link
       end
-      students_profile[:profile_quote]
+      students_profile[:profile_quote] = profile.css
   end
 
 end
